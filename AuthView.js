@@ -8,7 +8,7 @@ export const AuthView = () => {
   return (
     <Drawer.Navigator initialRouteName="Profile">
       <Drawer.Screen name="Home" component={Home} />
-      <Drawer.Screen name="Setup Profile" component={ListView} />
+      <Drawer.Screen name="List View" component={ListView} />
     </Drawer.Navigator>
   );
 };

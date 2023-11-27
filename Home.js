@@ -13,7 +13,7 @@ export const Home = () => {
       const id = uuidv4();
       await axiosInstance.post(
         "/products",
-        { id: 4, product: "test", quantity: 5 },
+        { id: id, product: name, quantity: quantity },
         {
           headers: {
             Accept: "application/json",
