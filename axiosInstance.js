@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export const axiosInstance = axios.create({
-  baseURL: "http://localhost:3001",
+const axiosInstance = axios.create({
+  baseURL: "https://localhost:5000",
   timeout: 5000,
 });
 
@@ -24,3 +24,5 @@ axiosInstance.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+
+export default axiosInstance;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, Text, TextInput, View } from "react-native";
 import "react-native-get-random-values";
 import { v4 as uuidv4 } from "uuid";
-import { axiosInstance } from "./axiosInstance";
+import axiosInstance from "./axiosInstance";
 
 export const Home = () => {
   const [name, setName] = useState("");
@@ -13,7 +13,7 @@ export const Home = () => {
       const id = uuidv4();
       await axiosInstance.post(
         "/products",
-        { id: 4, name: "test", quantity: 5 },
+        { id: 4, product: "test", quantity: 5 },
         {
           headers: {
             Accept: "application/json",
